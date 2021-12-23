@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+
+body {
+    background-color: #7180AC;
+}
+
+#main-content {
+    width: 400px;
+    height: 600px;
+    background-color: #2B4570;
+    opacity: 0.8;
+    border-radius: 10px;
+    margin-left: 35%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+}
+
+
+/*----INITIAL STATE OF DIVS-----*/
+#btnShow {
+    top: 50%;
+    left: 50%;
+    margin: 65% -50% -50% 33%;
+    align-items: center;
+    width: 150px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 25px;
+}
+
+input[type="submit"] {
+    /* top: 50%; */
+    /* left: 50%; */
+    margin: 0% -50% -50% 13%;
+    align-items: center;
+    width: 150px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 25px;
+}
+
+input[type="submit"]:checked {
+    background-image: src="your-loader-url";
+}
+input[type="text"] {
+    width: 223px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 25px;
+}
+
+#form-group {
+    visibility: hidden;
+    margin-left: 23%;
+}
+
+h3 {
+    /* text-align: -webkit-center; */
+    margin-top: 125px;
+    margin-left: 14px;
+    font-size: 30px;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+/*----END OF INITIAL STATE OF DIVS----*/
