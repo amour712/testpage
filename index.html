@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:\Users\USER\Documents\Web Development\XHTML Course\Git Pages\style.css">
+    <title>Test Page</title>
+</head>
+<body id="bodymain">
+    <div id="main-content">
+        <button id="btnShow" onClick="this.style.display='none'; showBox()">Click Me 🥰</button>
+        <script>
+            function showBox() {
+                document.getElementById('form-group').style.visibility = "visible";
+            }
+        </script>
+
+        <div id="form-group">
+            <form id="showForm">
+                <label><h3>What is your name?</h3>
+                    <input type="text" id="name" autocomplete="off"></label>
+                    
+                    <br><br>
+                    <!--Submit form-->
+                    <input type="submit" id="submit" onClick="popup()">
+                    
+                    <script>
+                        function popup(){
+                            var name = document.getElementById("name").value;
+                            var myWindow = window.open("", "MsgWindow", "width=400, height=400, left=473px, top=100px, resizable=yes");
+                            myWindow.document.write(name,", this is a sample webpage, and it works!");
+                        }
+                    </script>
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>
